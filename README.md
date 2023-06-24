@@ -1,18 +1,15 @@
 ### Hi there 👋
-Created a new branch to learn to pull requests.
+Created a new branch to learn more.
 
-<!--
-**YojRas/Yojras** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**YojRas/Yojras** is my first Repository.
 
-Here are some ideas to get you started:
+<--Here are some ideas to get you started:-->
 
-- 🔭 I’m currently working on ...Learning Git and GitHub
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
+🔭 I’m currently working on ...Learning Git and GitHub
+🌱 I’m currently learning Git, Git Desktop, and GitHub
+👯 I’m looking to collaborate on source code.
+🤔 I’m looking for help with GitHub features. 
 - 💬 Ask me about ...
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
--->
-b
