@@ -1,0 +1,15 @@
+Activity 3.01: Converting a Newspaper Article to a Web Page
+Using a copy of a recent newspaper, choose a particular article and note down what HTML elements would be used if the paper were a web page. Now create a web page version of the newspaper article using semantic markup and CSS to recreate the layout as closely as possible:
+
+Get a copy of a newspaper article and annotate it with a pen to label the individual HTML elements.
+Create a file named Activity 3.01.html within the Chapter03 folder in VSCode. You can use the starter HTML from a previous exercise as a starting point.
+Start writing out the HTML for the news article.
+Now style the text and layout using CSS.
+An example of how you could annotate a newspaper article to distinguish the different page elements can be seen in the following figure:
+
+
+Figure 3.39: Sample annotated article
+
+Note
+
+The solution for this activity can be found via this link.
