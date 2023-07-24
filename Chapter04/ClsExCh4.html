@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <meta charset="UTF-8">
+        <title>Class Exercise</title>
+        <style>
+            *{
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+            h1{
+                text-align: center;
+            }
+            div{
+                margin-bottom: 20px;
+                align-self: center;
+               
+                
+            }
+            input{
+                /*display: flex;*/
+                
+                border: 0;
+                
+                border-bottom: 1px solid gray;
+                padding: 10px 0;
+                width:200px;
+            }
+            input::after{
+                content: '*';
+                color:red;
+                font-size: 15px;
+            }
+            label{
+                display: block;
+                background: rgb(241, 238, 238);
+                width: 200px;
+                
+            }
+
+            fieldset{
+                margin-top: 20px;
+            }
+
+            button{
+                margin: 20px;
+                background: #999;
+                border:0;
+                color:white;
+                font-size: 12px;
+                height: 50px;
+                width: 200px;
+                text-transform: uppercase;
+                
+            }
+            span{
+                color:red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>New Contact </h1>
+        <form action="url to send form data" method="get">
+        <fieldset>
+            <div>
+            <label for="first-name">First name: <span>*</span></label><br/>
+            <input type="text" name="first-name" placeholder="First name" required><br/>
+            <label for="lastname">Last name:<span>*</span></label><br/>
+            <input type="text" name="Last-name" placeholder="Last name" required><br/>
+            <label for="company">Company:</label><br/>
+            <input type="text" name="company" placeholder="Company" >
+        </div>
+        </fieldset>
+        <fieldset>
+        <div>
+            <label for="telephone">Mobile</label>
+            <input type="tel" name="telephone" id="telephone"><br/>
+            <label for ="email">Email:<span>*</span></label>
+            <input type="email" id="email" name="email">
+        </div>
+        </fieldset>
+        <div>
+            <button type="submit" name="submit">Submit</button>
+        </div>
+        </form>
+    </body>
+</html>
