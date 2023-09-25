@@ -1,0 +1,15 @@
+{
+  "name": "chapter-10",
+  "version": "1.0.0",
+  "description": "HTML5 & CSS3 Workshop Chapter-10 Exercise.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css --output-style expanded"
+  },
+  "author": "Yojna Rastogi",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

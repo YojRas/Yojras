@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <htad>
+        <meta charset="utf-8">
+        <title>Exercise 7.04: Adding Captions</title>
+        <style>
+            .video-container{
+                max-width: 1080px;
+                margin:16px auto;
+            }
+
+            .video-container video{
+                width: 100;
+            }
+        </style>
+    </htad>
+    <body>
+        <div class="video-container">
+            <video id="video-1" poster="media/Banner.png" controls>
+                <source src="media/IMG_6021.MOV">
+                <track src="media/subtitles-en.vtt" kind="subtitles" label="English" srclang="en" default>
+                <track src="media/subtitles-es.vtt" kind="subtitles" label="Espanol" srclang="es">
+                Your browser does not support the HTML5
+                <code>video</code>element.
+            </video>
+        </div>
+    </body>
+
+</html>

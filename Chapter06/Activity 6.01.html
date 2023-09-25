@@ -1,175 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width initial-scale=1">
-        <title>
-            Vedio store home page
 
-        </title>
-        <style type "text/css">
-            *{
-                margin:0;
-                padding: 0;
-            }
-            body{
-                font-family: sans-serif;
-                margin:0 auto;
-                width:1200px;
-            }
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Vedio store home page
 
-            nav ul{
-                display: flex;
-                list-style: none;
-            }
+    </title>
+    <style type "text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-            nav a{
-                color: black;
-                font-weight: bold;
-                padding: 15px;
-                text-decoration: none;
-                display: block;
-                margin-left: 30px;
-            }
-            nav a:hover{
-                text-decoration: underline;
-            }
+        body {
+            font-family: sans-serif;
+            margin: 0 auto;
+            /*width: 1200px;*/
+        }
 
-            .intro{
-                margin:30px;
-                padding-left: 10px;
-                width: 50%;
-            }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
 
-            .breadcrumbs{
-                display: flex;
-                list-style: none;
-            }
-            .breadcrumbs li{
-                padding: 10px;
-                margin-left: 30px;
-            }
+        nav a {
+            color: black;
+            font-weight: bold;
+            padding: 15px;
+            text-decoration: none;
+            display: block;
+            margin-left: 30px;
+        }
 
-            .breadcrumbs li::after{
-                content: '/';
-                margin-left: 20px;
-            }
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-            .breadcrumbs li:last-child::after{
-                content: none;
-            }
+        .intro {
+            margin: 30px;
+            padding-left: 10px;
+            width: 50%;
+        }
 
-            .product-card{
-                display:inline-block;
-                border: 1px solid black;
-                padding: 15px;
-            }
+        .breadcrumbs {
+            display: flex;
+            list-style: none;
+        }
 
-            .product-card img{
-                width: 100%;
-            }
+        .breadcrumbs li {
+            padding: 10px;
+            margin-left: 30px;
+        }
 
-            .product-card h2{
-                margin: 30px 0 15;
-            }
+        .breadcrumbs li::after {
+            content: '/';
+            margin-left: 20px;
+        }
 
-            .product-card a{
-                color:black;
-                text-decoration: none;
-            }         
-            
-            .product-card p{
-                line-height: 1.5;
-            }
+        .breadcrumbs li:last-child::after {
+            content: none;
+        }
 
-            .original-price{
-                color: gray;
-                text-transform:uppercase;
-            }
+        .product-card {
+            display: inline-block;
+            border: 1px solid black;
+            padding: 15px;
+        }
 
-            .current-price span{
-                
-                font-weight: bold;
-                text-decoration:underline;
-            }
+        .product-card img {
+            width: 100%;
+        }
 
-            .saving{
-                color:green;
-            }
+        .product-card h2 {
+            margin: 30px 0 15;
+        }
 
-            .product-cards{
-                margin-left: 30px;
-            }
+        .product-card a {
+            color: black;
+            text-decoration: none;
+        }
 
-        </style>
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li> <a href="">Videos to rent </a></li>
-                <li> <a href="">Videos to buy</a></li>
-                <li> <a href="">Used DVD's</a></li>
-                <li> <a href="">Offers</a></li>
-            </ul>
-        </nav>
-        <section>
-            <ol class="breadcrumbs">
-                <li><a href="">Home</a></li>
-                <li><a href="">Used DVD's</a></li>
-                <li>Less than $10</li>
-            </ol>
-        </section>
-           
-        <section class="intro">
-            <h1> Videos less than $10 </h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                 In bibendum non purus quis vestibulum. 
-                Pellentesque ultricies quam lacus, ut tristique sapien tristique et.
-                
-            </p>
-        </section>
+        .product-card p {
+            line-height: 1.5;
+        }
 
-        <section class="product-cards">
-            <div class="product-card">
-                <img src="https://dummyimage.com/150X150/87ceeb&text=Product+Image+1" alt="" />
-                <h2>
-                    <a href=""> Video title 1</a>
-                </h2>
+        .original-price {
+            color: gray;
+            text-transform: uppercase;
+        }
 
-                <p class="original-price">RRP:</p>
-                <p class="current-price">Price you pay <span> $9.99</span></p>
-                <p class="saving"> Your saving $9</p>
-            </div>
+        .current-price span {
 
-            <div class="product-card">
-                <img src="https://dummyimage.com/150x150/87ceeb&text=Product+Image+2" 
-                alt="Product image 2" />
-                <h2><a href="">Video title 2</a></h2>
-                <p class="original-price"> RRP: $18.99</p>
-                <p class="current-price">Price you pay <span> $9.99</span></p>
-                <p class="saving">Your saving $9</p>
-            </div>
+            font-weight: bold;
+            text-decoration: underline;
+        }
 
-            <div class="product-card">
-                <img src="https://dummyimage.com/150x150/87ceeb&text=Product+Image+3" 
-                alt="Product image 3" />
-                <h2><a href="">Video title 3</a></h2>
-                <p class="original-price"> RRP: $18.99</p>
-                <p class="current-price">Price you pay <span> $9.99</span></p>
-                <p class="saving">Your saving $9</p>
-            </div>
+        .saving {
+            color: green;
+        }
 
-            <div class="product-card">
-                <img src="https://dummyimage.com/150x150/87ceeb&text=Product+Image+4" 
-                alt="Product image 4" />
-                <h2><a href="">Video title 4</a></h2>
-                <p class="original-price"> RRP: $18.99</p>
-                <p class="current-price">Price you pay <span> $9.99</span></p>
-                <p class="saving">Your saving $9</p>
-            </div>
+        .product-cards {
+            margin-left: 30px;
+        }
+    </style>
+</head>
 
-            
-        </section>
-    </body>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="">Videos to rent </a></li>
+            <li> <a href="">Videos to buy</a></li>
+            <li> <a href="">Used DVD's</a></li>
+            <li> <a href="">Offers</a></li>
+        </ul>
+    </nav>
+    <section>
+        <ol class="breadcrumbs">
+            <li><a href="">Home</a></li>
+            <li><a href="">Used DVD's</a></li>
+            <li>Less than $10</li>
+        </ol>
+    </section>
+
+    <section class="intro">
+        <h1> Videos less than $10 </h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            In bibendum non purus quis vestibulum.
+            Pellentesque ultricies quam lacus, ut tristique sapien tristique et.
+
+        </p>
+    </section>
+
+    <section class="product-cards">
+        <div class="product-card">
+            <img src="https://dummyimage.com/150X150/87ceeb&text=Product+Image+1" alt="" />
+            <h2>
+                <a href=""> Video title 1</a>
+            </h2>
+
+            <p class="original-price">RRP:</p>
+            <p class="current-price">Price you pay <span> $9.99</span></p>
+            <p class="saving"> Your saving $9</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://dummyimage.com/150x150/87ceeb&text=Product+Image+2" alt="Product image 2" />
+            <h2><a href="">Video title 2</a></h2>
+            <p class="original-price"> RRP: $18.99</p>
+            <p class="current-price">Price you pay <span> $9.99</span></p>
+            <p class="saving">Your saving $9</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://dummyimage.com/150x150/87ceeb&text=Product+Image+3" alt="Product image 3" />
+            <h2><a href="">Video title 3</a></h2>
+            <p class="original-price"> RRP: $18.99</p>
+            <p class="current-price">Price you pay <span> $9.99</span></p>
+            <p class="saving">Your saving $9</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://dummyimage.com/150x150/87ceeb&text=Product+Image+4" alt="Product image 4" />
+            <h2><a href="">Video title 4</a></h2>
+            <p class="original-price"> RRP: $18.99</p>
+            <p class="current-price">Price you pay <span> $9.99</span></p>
+            <p class="saving">Your saving $9</p>
+        </div>
+
+
+    </section>
+</body>
 
 </html>

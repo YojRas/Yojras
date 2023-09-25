@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Custom Element With Attributes </title>
+
+    <style>
+        .new-post::before{
+            font-weight: bold;
+            content: "⏰ NEW! ⏰";
+        }
+    </style>
+</head>
+
+<body>
+    <main class="blog-posts">
+        <article>
+            <blog-headline type="cats" newpost>Blog Post About Kittens</blog-headline>
+        </article>
+        <article>
+            <blog-headline type="dogs">Blog Post About Puppies </blog-headline>
+        </article>
+    </main>
+    <script>
+        class BlogHeadline extends HTMLElement {
+            constructor() {
+                super();
+                if(this.hasAttribute("type")){
+                    this.setIcon(this.type);
+                }
+                this.newpost=this.hasAttribute("newpost");
+            }
+
+            get type(){
+                return this.getAttribute("type");
+            }
+
+            set type(newValue){
+                return this.setAttribute("type",newValue);
+                this.setIcon(this.type);
+            }
+
+            get newpost(){
+                return this.hasAttribute("newpost");
+            }
+
+            set newpost(newValue){
+                if(newValue){
+                    this.setAttribute("newpost","");
+                }
+                else{
+                    this.removeAttribute("newpost");
+                }
+                this.setIsNewPostIcon(this.newpost);
+            }
+
+            setIsNewPostIcon(isNewPost){
+                if(isNewPost){
+                    this.classList.add("new-post");
+                }
+                else{
+                    this.classList.remove("new-post");
+                }
+            }
+
+            setIcon(type){
+                if(type=="cats"){
+                    this.textContent= this.textContent+" 🐱 ";
+                }
+                else if(type=="dogs"){
+                        this.textContent="🐶"+this.textContent+"🐶";
+                }
+            }
+        }
+        window.customElements.define("blog-headline", BlogHeadline);
+    </script>
+</body>
+
+</html>
